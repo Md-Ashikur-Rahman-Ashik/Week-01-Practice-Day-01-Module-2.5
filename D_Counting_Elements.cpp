@@ -19,6 +19,7 @@ int main()
             if (integerVector[i] == integerVector[j])
             {
                 countSimilar++;
+                break;
             }
             else if (integerVector[i] + 1 == integerVector[j])
             {
@@ -29,14 +30,7 @@ int main()
 
     if (countMore > 0)
     {
-        if (countMore > countSimilar)
-        {
-            cout << countMore;
-        }
-        else
-        {
-            cout << countMore + countSimilar;
-        }
+        cout << countMore + countSimilar;
     }
     else if (countMore == 0)
     {
